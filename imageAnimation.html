@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider Animation</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section:nth-child(1) {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body > section:nth-child(1) > section {
+            width: 500%;
+            height: 100%;
+            display: flex;
+            animation: sliderAnimation 15s infinite alternate;
+        }
+
+        body > section:nth-child(1) > section > div {
+            width: 100%;
+            height: 100%;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(1) {
+            background: url("assests/image/imageani3.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(2) {
+            background: url("assests/image/imageani2.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(3) {
+            background: url("assests/image/imageani.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(4) {
+            background: url("assests/image/imageani4.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(5) {
+            background: url("assests/image/imageani5.png");
+            background-position: center;
+            background-size: cover;
+        }
+        h1,h2{
+
+        }
+
+        @keyframes sliderAnimation {
+            0%,20% {
+                transform: translateX(0);
+            }
+            25%,40% {
+                transform: translateX(-20%);
+            }
+            45%,60% {
+                transform: translateX(-40%);
+            }
+            65%,80% {
+                transform: translateX(-60%);
+            }
+            85%,100% {
+                transform: translateX(-80%);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    
+</section>
+</body>
+</html>

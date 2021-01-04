@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Drop Animation</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        div {
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: waterdrop 2s infinite;
+        }
+
+        @keyframes waterdrop {
+            from {
+                border: 3px solid #070d67;
+                width: 10px;
+                height: 10px;
+            }
+            to{
+                border: 7px solid #070d67;
+                width: 350px;
+                height: 350px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
